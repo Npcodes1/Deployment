@@ -78,7 +78,7 @@ app.use("/", authRoutes);
 // GET routes to other pages- will remove later
 //points to the Home page
 app.get("/", (req, res, next) => {
-    res.status(200).json({success: {message: "Index successful"}, statusCode: 200});
+    res.status(200).json({success: {message: "This route points to the Home page"}, statusCode: 200});
 });
 
 //points to the About page"
