@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update</title>
+    <link rel="stylesheet" href="./public/styles/styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/27b39b2da2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <a href="./index.html">
+              <img
+                class
+                src="./public/images/CodeSquad-Comics-logo.png"
+                alt="CodeSquad-Comics-logo"
+              />
+            </a>
+          </div>
+
+          <div class="nav-links">
+            <ul class>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./login.html">LOGIN</a></li>
+            </ul>
+          </div>
+          <a class="hamburger" href="#" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main-container bg-gradient">
+      <section class="comics-container">
+        <form class="form" action="#">
+          <h1 class="h1-title">UPDATE COMIC</h1>
+          <div class="form-fields">
+            <div class="form-details">
+              <label for="title">Title:</label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                value="title value stored in the database"
+              />
+            </div>
+
+            <div class="form-details">
+              <label for="author">Author:</label>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                value="author value stored in the database"
+              />
+            </div>
+
+            <div class="form-details">
+              <label for="publisher">Publisher:</label>
+              <select name="publisher" id="publisher">
+                <option value="BOOM! Box">BOOM! Box</option>
+                <option value="DC Comics">DC Comics</option>
+                <option value="Harry N. Abrams">Harry N. Abrams</option>
+                <option value="Icon Books">Icon Books</option>
+                <option value="Image Comics">Image Comics</option>
+                <option value="Marvel">Marvel</option>
+                <option value="Simon & Schuster">Simon & Schuster</option>
+                <option value="Top Shelf Productions">
+                  Top Shelf Productions
+                </option>
+                <option value="VIZ Media LLC">VIZ Media LLC</option>
+                <option value="select" selected disabled>
+                  publisher value stored in the database
+                </option>
+              </select>
+            </div>
+
+            <div class="form-details">
+              <label for="genre">Genre:</label>
+              <input
+                type="text"
+                id="genre"
+                name="genre"
+                value="genre data stored in database"
+              />
+            </div>
+
+            <div class="form-details">
+              <label for="pages">Number of pages:</label>
+              <input
+                type="text"
+                id="pages"
+                name="pages"
+                value="pages stored in database"
+              />
+            </div>
+
+            <div class="form-details">
+              <label for="rating">Rating:</label>
+              <input
+                type="number"
+                id="rating"
+                name="rating"
+                min="0"
+                max="5"
+                value="5"
+              />
+            </div>
+
+            <div class="form-details">
+              <label for="synopsis">Synopsis:</label>
+              <textarea
+                id="synopsis"
+                name="synopsis"
+                placeholder="synopsis value stored in database"
+              ></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <section class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-h3">VISIT US</h3>
+          <ul class="footer-links">
+            <li>CodeSquad Comics</li>
+            <li>123 Dorchester Avenue</li>
+            <li>Boston, MA 02124</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-h3">LINKS</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-h3">FOLLOW US</h3>
+          <ul class="footer-links">
+            <div class="social">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-h3">A PRODUCT OF</h3>
+          <a
+            href="http://codesquad.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-img-size"
+              src="./public/images/CodeSquad-logo-b.png"
+              alt="CodeSquad-Footer-logo"
+            />
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

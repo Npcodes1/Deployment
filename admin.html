@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="./public/styles/styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/27b39b2da2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <a href="./index.html">
+              <img
+                class
+                src="./public/images/CodeSquad-Comics-logo.png"
+                alt="CodeSquad-Comics-logo"
+              />
+            </a>
+          </div>
+
+          <div class="nav-links">
+            <ul class>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./login.html">LOGIN</a></li>
+            </ul>
+          </div>
+          <a class="hamburger" href="#" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main-container bg-gradient">
+      <section class="comics-container">
+        <h1 class="h1-title admin">ADMIN PAGE</h1>
+        <button class="btn" type="submit">Add New Comic</button>
+
+        <div class="table-container">
+          <table class="table">
+            <thead class="table-heading">
+              <tr>
+                <th>COMIC TITLE</th>
+                <th>EDIT</th>
+                <th>DELETE</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr class="table-row">
+                <td>Batman: The Dark Knight Returns</td>
+                <td>
+                  <button class="btn btn-edit">EDIT</button>
+                </td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Black Panther: A Nation Under Our Feet Book 1</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Fun Home: A Family Tragicomic</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Hunter X Hunter Vol. 1</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Lumberjanes Vol. 1</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>March: Book One</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>One Piece, Vol. 1: Romance Dawn</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Parable of the Sower</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Queer: A Graphic History</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>The Walking Dead, Vol. 1: Days Gone Bye</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Wake: The Hidden History of Women-Led Slave Revolts</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+              <tr class="table-row">
+                <td>Watchmen</td>
+                <td><button class="btn btn-edit">EDIT</button></td>
+                <td><button class="btn btn-delete">DELETE</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <section class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-h3">VISIT US</h3>
+          <ul class="footer-links">
+            <li>CodeSquad Comics</li>
+            <li>123 Dorchester Avenue</li>
+            <li>Boston, MA 02124</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-h3">LINKS</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-h3">FOLLOW US</h3>
+          <ul class="footer-links">
+            <div class="social">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3 class="footer-h3">A PRODUCT OF</h3>
+          <a
+            href="http://codesquad.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-img-size"
+              src="./public/images/CodeSquad-logo-b.png"
+              alt="CodeSquad-Footer-logo"
+            />
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

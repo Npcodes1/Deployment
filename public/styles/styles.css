@@ -1,0 +1,511 @@
+:root {
+    --teal: #006B6B;
+    --light-teal: #009E9E;
+    --yellow: #FCCF14;
+    --blue: #063C5E;
+    --grey: #C2C2C2;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header, .navbar, .footer, .h1-title {
+    font-family: 'Fredericka the Great', serif;
+}
+
+/* Navigation Bar */
+.header {
+    background-color: var(--blue);
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    padding: 1.5rem;
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo */
+.logo {
+    padding: 5px 0 15px 15px;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.logo {
+    flex-grow: 1;
+    flex-basis: 200px;
+    
+}
+
+.nav-links {
+    flex-grow: 2;
+    flex-basis: 200px;
+}
+
+.nav-links ul {
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links li a {
+    color: var(--white);
+    margin: auto 1rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.nav-links a:active {
+    font-weight: 700;
+    background-color: var(--yellow);
+    color: var(--blue);
+    padding: 1rem;    
+}
+
+/* Hamburger Menu */
+.hamburger {
+    color: var(--white);
+    display: none;
+}
+
+/* Comic Pic Covers */
+.comic-img {
+    width: 12.5rem;
+}
+
+/* Background Color */
+.bg-gradient {
+    background-image: linear-gradient(var(--white), var(--light-teal), var(--teal));
+}
+
+/* Main Section */
+.main-container {
+    padding-bottom: 2rem;
+}
+
+.comics-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5rem auto 3rem;
+    padding: 0 2rem;
+    border: 5px solid var(--blue);
+    background-color: var(--white);
+    align-items: center;
+}
+
+.comics-container p {
+    text-align: left;
+}
+
+.h1-title {
+    font-size: 2.2rem;
+}
+
+.h2-title {
+    font-size: 1.8rem;
+}
+
+.h1-title, .h2-title {
+    color: var(--blue);
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.comic-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+}
+
+.collection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 20%;
+    margin: 1rem 2rem;
+    padding: 1rem; 
+}
+
+.collection-container .comic-details {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.details-link, .details-link::after {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.details-link:hover {
+    color: var(--teal);
+    font-weight: 700;
+}
+
+.details-link:active {
+    color: var(--blue);
+    font-weight: 700;
+    background-color: var(--yellow);;
+}
+
+.btn {
+    background-color: var(--yellow);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0 auto 3rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--blue);
+    border-top: 5px solid var(--yellow);
+    color: var(--white);
+    padding: 2rem;
+}
+
+.footer-container {
+    max-width: 100%;
+    margin: auto 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 100%;
+}
+
+.footer-h3 {
+    color: var(--yellow);
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    padding-left: 0;
+    color: var(--white);
+}
+
+.footer-links li a {
+    color: var(--white);
+    margin: auto;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+.footer-links a:active {
+    font-weight: 700;
+    background-color: var(--yellow);
+    color: var(--blue);  
+    padding: 0.2rem; 
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+}
+
+.social li {
+    flex: 1 0 100%;
+}
+
+.footer-img-size {
+    width: 12rem;
+}
+
+/* Parable of the Sower Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 2.5rem auto;
+    border-radius: 50px;
+    border: 5px solid var(--yellow);
+    background-color: var(--blue);
+}
+
+.card-top {
+    background-color: var(--blue);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-title {
+    text-align: center;
+    color: var(--yellow);
+    font-family: 'Fredericka the Great', serif;
+    font-size: 1em;
+}
+
+.card-img {
+    max-width: 80%;
+    margin: auto 3rem;
+    border: 3px solid var(--white);
+    border-radius: 40px;
+    margin-bottom: 2rem;
+}
+
+.card-bottom {
+    background-color: var(--white);
+    padding: 0.5rem 1rem;
+    border-top: 5px solid var(--yellow);
+    border-radius: 0 0 45px 45px;
+}
+
+.card-details {
+    padding: 0.5rem;
+}
+
+.card-info-style {
+    color: var(--blue);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.card-answer-style {
+    font-style: italic;
+}
+
+/* Forms for Login, Update, and Create Pages */
+.form-fields {
+    margin-top: 2rem;
+}
+
+.form-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.form-details label {
+    flex-grow: 1;   
+    flex-basis: 180px;
+    padding: 1rem 0.4rem;
+    text-align: right;
+}
+
+.form-fields input, .form-fields select {
+    flex-grow: 2;
+    flex-basis: 230px;
+    width: 250px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+input {
+    padding: 0.3rem;
+    margin: 0.5rem auto;   
+}
+
+/* For Select and Textarea for the Create and Update Pages */
+select, textarea {
+    flex-grow: 2;
+    flex-basis: 230px;
+}
+
+textarea {
+    max-width: 400px;
+    height: 200px;
+    resize: none;
+}
+
+/* About Page */
+.collection-details {
+    margin-bottom: 2rem;
+}
+
+.collection-details > ul {
+    text-align: left;
+}
+
+/* Admin Page */
+.admin {
+    margin-bottom: 2rem;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3rem 6rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-row {
+    text-align: left;
+}
+
+th, td {
+    margin: 4rem auto;
+    padding: 1rem;
+    border: 2px solid var(--blue);
+}
+
+thead, tr:nth-child(even) {
+    background-color: var(--grey);
+}
+
+.btn-edit {
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 1.5em;
+}
+
+.btn-delete {
+    color: var(--blue);
+    margin-top: 1.5em;
+}
+
+
+/* Media Queries */
+ 
+/* Mobile and tablet Responsiveness */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    /* Navigation */
+    .header {
+        position: relative;
+    }
+
+    .navbar {
+        padding: auto 4rem;
+    }
+
+    .logo {
+        padding: 5px;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: absolute;
+        right: 2rem;
+        top: 2.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Footer */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-top: 2rem;
+    }
+
+    /* Parable of the Sower Card */
+    .card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-details {
+        font-size: 0.75em;
+    }
+
+    /* Forms */
+    .form-details label {
+        text-align: left;
+    }
+
+    /* Table */
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .card-top {
+        flex: 1;
+    }
+
+    .card-title {
+        margin: 2rem auto 3rem;
+    }
+    
+    .card-img {
+        max-width: 300px;
+    }
+
+    .card-bottom {
+        background-color: var(--white);
+        padding: 0 0.5rem 0 3rem;
+        border-top: 0 solid var(--yellow);
+        border-radius: 0 45px 45px 0;
+        flex: 2;
+    }
+
+    .card-details {
+        padding-right: 3rem;
+    }
+}

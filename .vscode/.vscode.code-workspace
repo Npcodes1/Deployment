@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../routes"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../models"
+		},
+		{
+			"path": "../data"
+		},
+		{
+			"path": "../controllers"
+		},
+		{
+			"path": "../config"
+		}
+	]
+}
