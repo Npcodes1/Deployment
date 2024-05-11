@@ -45,7 +45,7 @@ passport.use(
 passport.use(new GithubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/github"
+    callbackURL: "https://deployment-l9cr.onrender.com/auth/github"
 },
     (accessToken, refreshToken, profile, done) => {
         console.log(profile);
@@ -57,7 +57,7 @@ passport.use(new GithubStrategy({
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/"
+    callbackURL: "https://deployment-l9cr.onrender.com/auth/google"
 },
     (accessToken, refreshToken, profile, done) => {
         console.log(profile);
