@@ -35,7 +35,7 @@ const signupRequest = (req, res, next) => {
             firstName,
             lastName,
             username,
-            password: hashedPassword,
+            password: hashedPassword
         });
 
         try {

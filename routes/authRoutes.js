@@ -42,14 +42,14 @@ router.get("/login/github/failed", (req, res, next) => {
 
 //Lastly, GET to the path of /auth/github with passport authentication of the github route and providing a successRedirect to / AND a failureRedirect to /login/github/failed
 router.get("/auth/github", passport.authenticate("github", {
-    successRedirect: "/",
+    successRedirect: "/login/local",
     failureRedirect: "/login/github/failed"
 }));
 
 //Google Strategy
 
 //GET to the path of /login/google with passport authentication of the google route and providing a scope object of an array with a string of profile.
-router.get("/login/google", passport.authenticate("google", { scope: ["profile"] }));
+router.get("/login/google", passport.authenticate("google", { scope: [ "profile" ] }));
 
 //GET to the path of /login/google/failed with a callback that has a res.json where the message states that "There is a problem with Google Authentication".
 
@@ -60,7 +60,7 @@ router.get("/login/google/failed", (req, res, next) => {
 //Lastly, GET to the path of /auth/google with passport authentication of the google route and providing a successRedirect to / AND a failureRedirect to /login/local/failed
 router.get("/auth/google", passport.authenticate("google", {
     successRedirect: "/",
-    failureRedirect: "/login/local/failed"
+    failureRedirect: "/login/google/failed"
 }));
 
 //export router

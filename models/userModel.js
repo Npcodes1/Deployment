@@ -1,5 +1,6 @@
 //require Mongoose
 const mongoose = require("mongoose");
+const passport = require("passport");
 
 //Create a new variable called userSchema. As a value, make a new Schema. To do this, use the new keyword and have mongoose connect to the Schema() method using dot notation
     //The schema should include the following keys:
