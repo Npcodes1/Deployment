@@ -45,7 +45,8 @@ passport.use(
 passport.use(new GithubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: "https://deployment-l9cr.onrender.com/auth/github"
+    callbackURL: "https://deployment-l9cr.onrender.com/auth/github",
+    scope: ["profile", "email"],
 },
     (accessToken, refreshToken, profile, done) => {
         console.log(profile);
