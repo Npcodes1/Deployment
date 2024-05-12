@@ -42,7 +42,7 @@ router.get("/login/github/failed", (req, res, next) => {
 
 //Lastly, GET to the path of /auth/github with passport authentication of the github route and providing a successRedirect to / AND a failureRedirect to /login/github/failed
 router.get("/auth/github", passport.authenticate("github", {
-    successRedirect: "/login/local",
+    successRedirect: "/",
     failureRedirect: "/login/github/failed"
 }));
 
